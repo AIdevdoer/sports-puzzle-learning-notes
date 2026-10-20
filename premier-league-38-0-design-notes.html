@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Design notes for a 38-0 Premier League season challenge</title>
+  <meta name="description" content="Notes on modelling squad rotation, fatigue, and consistency in a 38-match Premier League season challenge.">
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Design notes for a 38-0 Premier League season challenge</h1>
+      <p>A perfect league season sounds simple: win every match. The design problem is harder because a Premier League schedule contains 38 rounds, changing opponents, and repeated recovery decisions.</p>
+
+      <h2>What the puzzle should measure</h2>
+      <p>The challenge should reward consistency rather than one strong starting lineup. A useful model must track fatigue, squad depth, and the cost of using the same players every week.</p>
+
+      <h2>Why rotation matters</h2>
+      <p>Each selection should affect the next match. Resting a key player can reduce the chance of winning today, but it can improve the squad for a difficult fixture later. That trade-off gives the season structure meaning.</p>
+
+      <h2>A playable reference</h2>
+      <p>The <a href="https://wordlecup.today/38-0/premier-league/">38-0 Premier League season challenge</a> turns this idea into a browser game. The goal is to manage the whole campaign and finish with 38 wins from 38 league matches.</p>
+
+      <h2>Useful checks for similar games</h2>
+      <ul>
+        <li>Make the current round and season record visible.</li>
+        <li>Explain why a lineup decision changes the expected result.</li>
+        <li>Keep the match loop short enough for mobile play.</li>
+        <li>Show failure as part of the season, not as a hidden reset.</li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>
